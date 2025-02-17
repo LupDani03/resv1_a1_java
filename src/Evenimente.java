@@ -22,11 +22,11 @@ public class Evenimente {
     /**
      * Konstruktor für die Initialisierung einer Evenimente.
      *
-     * @param id          Eindeutige Fall-ID
-     * @param mitgliedsname     Name des Evenimente
-     * @param haus     hause des Evenimente
-     * @param ereignis    ereignis des Evenimente
-     * @param datum       Datum des Ereignis
+     * @param id            Eindeutige Fall-ID
+     * @param mitgliedsname Name des Evenimente
+     * @param haus          hause des Evenimente
+     * @param ereignis      ereignis des Evenimente
+     * @param datum         Datum des Ereignis
      */
     public Evenimente(int id, String mitgliedsname, String haus, String ereignis, String datum) {
         this.id = id;
