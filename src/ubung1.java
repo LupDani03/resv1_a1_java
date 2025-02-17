@@ -46,5 +46,20 @@ public class ubung1 {
                 System.out.println(objekt.mitgliedsname);
             }
         }
+        //2te Aufgabe(Alle Anzeige von die Stark-House)
+        // Filtert Evenimente mit dem Haus "Stark" und sortiert nach Datum
+        List<Evenimente> evenimenteDaten = new ArrayList<>();
+        for (Evenimente objekt : evenimenteList) {
+            if (objekt.haus.equals("Stark")) {
+                evenimenteDaten.add(objekt);
+            }
+        }
+        evenimenteDaten.sort(Evenimente::compareTo);
+
+        // Ausgabe der gefilterten und sortierten Evenimente
+        System.out.println("\nMitgliedern von den Hause Stark gesortet: ");
+        for (Evenimente evenimente : evenimenteDaten) {
+            System.out.println(evenimente.datum + " - Ereignis: " + evenimente.ereignis);
+        }
     }
 }

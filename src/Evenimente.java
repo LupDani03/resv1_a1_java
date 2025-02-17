@@ -55,6 +55,6 @@ public class Evenimente {
      * ein positiver Wert, wenn sie älter ist, oder 0, wenn beide gleich alt sind.
      */
     public int compareTo(Evenimente o) {
-        return o.datum.compareTo(this.datum);
+        return this.datum.compareTo(o.datum);
     }
 }
