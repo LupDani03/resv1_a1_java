@@ -37,8 +37,14 @@ public class ubung1 {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+        //erste aufgabe(Mitglieder namen suchen)
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Anfangsbuchstabe: ");
+        String ch = sc.nextLine();
         for (Evenimente objekt : evenimenteList) {
-            System.out.println(objekt.toString());
+            if (objekt.mitgliedsname.charAt(0) == ch.charAt(0)) {
+                System.out.println(objekt.mitgliedsname);
+            }
         }
     }
 }
